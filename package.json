@@ -1,0 +1,33 @@
+{
+  "name": "proyecto2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "npx tailwindcss -i ./static/css/tailwindBase.css -o ./static/css/styles.css --watch",
+    "start-dev": "npx nodemon server.js",
+    "dev": "npm-run-all -p -r css start-dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/21harley/tzuzul_proyecto2_node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/21harley/tzuzul_proyecto2_node/issues"
+  },
+  "homepage": "https://github.com/21harley/tzuzul_proyecto2_node#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "npm-run-all": "^4.1.5",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "tailwindcss": "^3.0.23"
+  }
+}
