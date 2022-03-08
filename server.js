@@ -1,6 +1,6 @@
 const path = require("path")
 const express = require("express")
-const { port } = require("./confing")
+const { port } = require("./config")
 
 //Importando rutas
 /*
