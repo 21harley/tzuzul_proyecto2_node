@@ -8,14 +8,14 @@ const userRouter = require("./routes/users")
 const authRouter = require("./routes/auth")
 */
 const app = express();
-
-app.use(express.static(path.join(__dirname,"static")));
-
-app.use(express.urlencoded({extended:true}));
-
-app.set('view engine', 'pug');
-
+app.set("view engine",'pug');
 app.set("views","views");
+app.use("/static", express.static('./static/'));
+
+app.use(express.text()) 
+app.use(express.json()) 
+app.use(express.urlencoded({extended:true}))
+
 
 /*
 app.use(userRouter);
